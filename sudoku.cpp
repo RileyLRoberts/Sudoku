@@ -313,7 +313,7 @@ int Sudoku::solve() {                               //Begin
 
             n++;                                                // Add one to n
 
-            backtrack_again_label:                              //A label for the goto statement used in succesive backtracking
+            backtrack_again_label:                              //A label for the goto (I know I shouldn't use it but I was stuck on finding a way around it this time) statement used in succesive backtracking
 
             if (n == 10) {                                      //If n equals 10
                                                                 //Then
@@ -351,7 +351,7 @@ int Sudoku::solve() {                               //Begin
 
                 if (n == 10) {                                      //If n equals 10
                                                                     //Then
-                    goto backtrack_again_label;                         //Go to the backtrack label in the code
+                    goto backtrack_again_label;                         // (I know I shouldn't use this, but I had an issue with the recursion that I could only fix with this) Go to the backtrack label in the code 
                 }                                                   //EndIf
 
             }                                                   //EndIf
